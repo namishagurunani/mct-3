@@ -300,13 +300,13 @@ header nav .home-iconbar .home-wishlist i{
     font-size: large;
     border: 1px solid #e9e9ed;
     border-top: 0;
-     width: 300px;
+     width: 279px;
      padding: 15px;
      display: flex;
      flex-direction: column;
      justify-content: start;
      line-height: 30px;
-     cursor: pointer;     
+     cursor: pointer;    
 }
  form > label{
     cursor: pointer;
@@ -478,21 +478,22 @@ input[type=checkbox] {
    height: auto;
    width: auto;
    cursor: pointer;
-   margin-right: 20px;;
+   margin-right: 20px;
+   row-gap: 1px;
 }
 
 .beauty-images > .img{
-    height: 510px;
-    width: 260px;
+    /* height: 480px; */
+    width: 210px;
     padding-left: 0.9rem;
    margin-bottom: 10px;
    margin-top: 20px;
    margin-left: 23px;
    /* border: 2px solid gray; */
 }
-.beauty-images > .img > img{
-    height: 38vh;
-    width: 12vw;
+.beauty-images > .img  img{
+    height: 250px;
+    width: 180px;
     /* cursor: pointer; */
 }
 .beauty-images > .img:hover{
