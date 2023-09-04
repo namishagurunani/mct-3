@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Assistant', sans-serif;
+    overflow-x: hidden;
 }
 :root{
     --footer-text: rgb(83,87,102);
@@ -180,7 +181,7 @@ header nav .home-iconbar .home-wishlist i{
 .flex-filter{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     padding-right: 2rem;
@@ -190,22 +191,28 @@ header nav .home-iconbar .home-wishlist i{
     text-align: center;
    
 }
-.flex-filter > .select{
+.search-bar{
     display: flex;
-    padding-right: 37rem;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    width: 85%;
+}
+.flex-filter  .select{
+    display: flex;
+    /* padding-right: 37rem; */
     align-items: center;
     gap: 2rem;
     font-size: 1rem;
 }
 
 .flex-filter > h2{
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: 700;
     padding-left: 1%;
 }
 .flex-filter > .filter{
     display: flex;
-   text-align: center;
    align-items: center;
 }
 
@@ -221,6 +228,7 @@ header nav .home-iconbar .home-wishlist i{
 /* ----------select form---------- */
 .flex-filter > .form{
     height: 8vh;
+    border: 2px solid black;
 }
 
 .flex-filter > form > select > option{
@@ -240,7 +248,7 @@ header nav .home-iconbar .home-wishlist i{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start;
     overflow: hidden;
     border: 1px solid #e9e9ed;
@@ -459,9 +467,9 @@ input[type=checkbox] {
                    }    
           /* --------------------images-----------------------  */
 .beauty-images{
-    height: 610vh;
+    height: auto;
     padding-right: 3rem;
-    width : 30vw;
+    width : auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -469,19 +477,18 @@ input[type=checkbox] {
 }
 
 .beauty-images > .img{
-    height: 68vh;
-    width: 18vw;
+    height: 510px;
+    width: 250px;
     padding-left: 0.9rem;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    margin-left: 23px;
-    /* border: 2px solid gray */
+   margin-bottom: 10px;
+   margin-top: 20px;
+   margin-left: 23px;
+   /* border: 2px solid gray; */
 }
 .beauty-images > .img > img{
-    height: 35vh;
+    height: 38vh;
     width: 12vw;
     cursor: pointer;
-    
 }
 .beauty-images > .img:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
