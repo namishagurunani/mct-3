@@ -6,7 +6,10 @@
 body{
     font-family: 'Assistant', sans-serif;
     overflow-x: hidden;
+    
 }
+
+
 :root{
     --footer-text: rgb(83,87,102);
     --text-color: rgb(40,44,63);
@@ -156,67 +159,76 @@ header nav .home-iconbar .home-wishlist i{
     flex-direction: column;
     text-align: start;
     justify-content: space-around;
-    line-height: 5vh;
+    line-height: 2rem;
     flex-wrap: wrap;
     margin-top: 6%;
-    padding-left:20px;
+    padding-left: 1.4rem;
+    font-size: 0.9rem;
 }
 .beauty > .description > h4 > span{
-    font-weight: 600;
+    font-weight: 700;
     color: black;
 }
 .beauty > .description > h4{
     color: rgb(28, 26, 26);
     font-weight: 400;
+    
 }
 .beauty > .description > h3{
-    color: rgb(28, 26, 26);
+    color: rgb(155, 149, 149);
     font-weight: 400;
 }
 .beauty .description > h3 > span{
     color: black;
-    font-weight: 600;
-}
-       /* ------------------flex-filter div css------------------- */
-.flex-filter{
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    line-height: 5rem;
-    cursor: pointer;
-    text-align: center;
-    
-   
-}
-.search-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 85%;
-}
-.flex-filter  .select{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+    font-weight: 700;
     font-size: 1rem;
 }
-
-.flex-filter  .filter{
+  .filter{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* border-bottom: 1px solid #e9e9ed; */
+    padding-left: 1.4rem; 
 }
-.flex-filter  .filter h2{
+div{
+display: block;
+}
+
+ .filter > h2{
     font-size: 16px;
     font-weight: 700;
 }
 
+      
+ .bundles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 5rem;
+    cursor: pointer;
+    text-align: center;
+    height: 2px;
+    padding-bottom:2rem;
+    padding-top: 25px;
+    width: 100%
+    
+    
+}
+
+  .bundles  .select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-right: 25rem;
+
+}
+
 .light{
-    font-size: 0.9rem;
+    font-size: 14px;
     font-weight: 400;
+    padding-left: 2.5rem;
 }
 
 /* ---------drop down icon--------- */
@@ -225,23 +237,22 @@ header nav .home-iconbar .home-wishlist i{
     color: #a7a7af;
 }
 /* ----------select form---------- */
-.flex-filter > .form{
-    height: 8vh;
-    border: 2px solid black;
-}
 
-.flex-filter > form > select > option{
+ .bundles > form > select > option{
     height: 18rem;
 }
 .form > form >select{
-    width: 260px;
-    height: 40px;
+    width: 250px;
+    height: 36px;
     border: 1px solid #95959a;
     color: #696B79;
     margin-right: 2rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 10px;
 }
+
+/* ------------sidebar-------------- */
+
 .row{
     width:100%;
     display: flex;
@@ -250,12 +261,12 @@ header nav .home-iconbar .home-wishlist i{
     flex-wrap: nowrap;
     align-items: flex-start;
     overflow: hidden;
-    border: 1px solid #e9e9ed;
-    /* position: relative; */
+    border:1px solid #e9e9ed;
+    border-top: 0;
+    border-right: 0;
 }
 
-
-    /* ------------sidebar-------------- */
+   
 
 .column{
     height: auto;
@@ -263,14 +274,13 @@ header nav .home-iconbar .home-wishlist i{
     flex-direction: column;
     align-items: start;
     padding: 0.1rem;
-    height: auto;
-    /* position: sticky; */
+    width: auto;
 }
+
 .column > .categories p{
     color:rgb(255,63,141);
     font-size: 16px;
     font-weight: 400;
-
 }
 .column > .brand p{
     color:rgb(255,63,141);
@@ -293,19 +303,23 @@ header nav .home-iconbar .home-wishlist i{
     font-weight: 400;
    
 }
+.column  .options{
+    font-size: 0.9rem;
+}
  .gender{
     color: black;
-    font-weight: 700;
-    font-size: 15px;
-    border: 1px solid #e9e9ed;
-    border-top: 0;
+    border:1px solid #e9e9ed;
      width: 250px;
-     padding: 15px;
+     padding-left: 15px;
+     padding-top: 12px;
+     padding-bottom: 12px;
      display: flex;
      flex-direction: column;
      justify-content: start;
      line-height: 30px;
-     cursor: pointer;    
+     cursor: pointer;   
+     position: relative;
+     border-left: 0;
 }
  form > label{
     cursor: pointer;
@@ -325,21 +339,24 @@ input[type=checkbox] {
 .categories{
     color: black;
     font-size: 14px;
-    border: 1px solid #e9e9ed;
-    border-top: 0;
+    border:1px solid #e9e9ed;
      width: 100%;
-     padding: 15px;
+     padding-left: 15px;
      display: flex;
      flex-direction: column;
      justify-content: start;
      padding-right: 0;
-     line-height: 20px;
+     line-height: 26px;
      cursor: pointer;
-     /* font-weight: 100; */
+     border-left: 0;
+     border-top: 0;
+     /* position: relative; */
 }
+
       .categories > form{
          font-weight: 400;
        }
+
        .categories > .flex-icon{
         display: flex;
         flex-direction: row;
@@ -351,16 +368,18 @@ input[type=checkbox] {
        .brand{
         color: black;
         font-size: 15px;
-        border: 1px solid #e9e9ed;
+        border:1px solid #e9e9ed;
         border-top: 0;
          width: 100%;
-         padding: 15px;
+         padding-left: 15px;
          display: flex;
          flex-direction: column;
          justify-content: start;
          padding-right: 0;
-         line-height: 30px;
+         line-height: 26px;
          cursor: pointer;
+         border-left: 0;
+         /* position: relative; */
     }
     /* -------------magnify icon---------------  */
 
@@ -407,17 +426,16 @@ input[type=checkbox] {
             color: black;
             border: 1;
             font-size: 15px;
-            border: 1px solid #e9e9ed;
+            border:1px solid #e9e9ed;
             border-top: 0;
              width: 100%;
-             padding: 15px;
+             padding-left: 15px;
              display: flex;
              flex-direction: column;
              justify-content: start;
              padding-right: 0;
-             line-height: 30px;
+             line-height: 26px;
              cursor: pointer;
-             
         }
               .prices > form{
                  font-weight: 400;
@@ -426,13 +444,12 @@ input[type=checkbox] {
                 color: black;
                 font-size: 15px;
                  width: 100%;
-                 padding: 15px;
+                 padding-left: 15px;
                  display: flex;
                  flex-direction: column;
                  justify-content: start;
-                 padding-right: 0;
-                 line-height: 30px;
-                 border: 1px solid #e9e9ed;
+                 line-height: 26px;
+                 border:1px solid #e9e9ed;
                  border-top: 0;
                  cursor: pointer;
          }
@@ -443,54 +460,47 @@ input[type=checkbox] {
                 color: black;
                 font-size: 15px;
                  width: 100%;
-                 padding: 15px;
+                 padding-left: 15px;
                  display: flex;
                  flex-direction: column;
                  justify-content: start;
                  padding-right: 0;
-                 line-height: 30px;
-                 border: 1px solid #e9e9ed;
+                 line-height: 26px;
+                 border:1px solid #e9e9ed;
                  border-top: 0;
-                 cursor: pointer;
+                 cursor: pointer; 
          }
                   .discount-range > form{
                      font-weight: 400;
                    }    
           /* --------------------images-----------------------  */
 .beauty-images{
-    /* height: auto;
-    padding-right: 3rem;
-    width : auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-   column-gap: 2rem; */
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
-   height: auto;
-   width: auto;
-   cursor: pointer;
-   margin-right: 20px;
-   row-gap: 1px;
-   text-align: left;
-}
+   height: 595vh;
+   width: 100%;
+   margin-right: 5px;
+   padding-bottom: 8rem;
+   align-items:flex-start;
+   border:1px solid #e9e9ed;
+   border-right: 0;
+   border-left: 0 ;
 
+}
 .beauty-images > .img{
-    /* height: 480px; */
-    width: 200px;
+    width: 205px;
+    height: 390px;
     padding-left: 0.9rem;
-   /* margin-bottom: 10px; */
    margin-top: 20px;
    margin-left: 23px;
-   /* border: 2px solid gray; */
+   text-align: left;
 }
 
 .beauty-images > .img  img{
     height: 250px;
     width: 180px;
-    /* cursor: pointer; */
 }
 .beauty-images > .img:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -518,19 +528,19 @@ input[type=checkbox] {
    .beauty-images > .img .discount{
     color: orange;
     font-weight: 400;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
    }
    .beauty-images > .img > h4 > .price{
    font-weight: 300;
    text-decoration: line-through;
-   font-size: 0.7rem;
+   font-size: 0.8rem;
    }
    .beauty-images > .img > h3{
     font-size: 1rem;
    }
    .beauty-images > .img > h4{
-    line-height: 2rem;
-    font-size: 0.8rem;
+    line-height: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 700;
    }
    .beauty-images > .img > .left{
@@ -548,15 +558,16 @@ input[type=checkbox] {
     gap: 8rem; 
     align-items: center;
      padding-bottom: 6rem; 
-     padding-left: 13rem;
-    /* padding-right: 30rem;  */
-
+     padding-left: 11rem;
 }
 .pages{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   
+}
+.pages > p{
+    font-size: 0.9rem;
 }
 .margin{
     display: flex;
@@ -569,51 +580,57 @@ input[type=checkbox] {
 #button1{
     color: white; 
     background-color: black;
-    height: 38px;
-    width: 28px;
+    height: 28px; 
+    width: 22px; 
     border: none;
+    font-size: 0.9rem;
 }
 button{
     cursor: pointer;
     color:black; 
     background-color: white;
-    height: 38px; 
-    width: 28px; 
+    height: 28px; 
+    width: 22px; 
     border: none;
     font-weight: bold;
     font-size: large;
+    font-size: 0.9rem;
 }
 button:hover{
     border: 1px solid #dcdce9;
-    height: 38px;
-    width: 28px;
+    height: 28px; 
+    width: 22px; 
 }
 #next{
     color: black; 
     background-color: white;
     border: 1px solid #c6c6cf;
-    height: 49px;
-    width: 6vw;
+    height: 39px;
+    width: 6rem;
     padding: 2px;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 #next:hover{
     border: 1px solid black;
-   height: 49px;
-   width: 6vw;
+    height: 39px;
+    width: 6rem;
 }
    /* -------------footer-------------- */
    .men_footer{
     background-color: #FAFBFC;
     font-family: 'Assistant','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial,sans-serif';
     padding-right: 50px;
+    /* position: relative;
+    z-index: 5; */
 }
+
 .footer_first_section{
     display: flex;
     gap:3rem;
     margin-left: 100px;
+
 }
 
 .online_cust_class ul ,.online_cust_class_2 ul{
