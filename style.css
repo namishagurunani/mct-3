@@ -198,7 +198,6 @@ display: block;
     font-size: 16px;
     font-weight: 700;
 }
-
       
  .bundles{
     display: flex;
@@ -212,8 +211,6 @@ display: block;
     padding-bottom:2rem;
     padding-top: 25px;
     width: 100%
-    
-    
 }
 
   .bundles  .select{
@@ -276,6 +273,7 @@ display: block;
     align-items: start;
     padding: 0.1rem;
     width: auto;
+    border:1px solid #e9e9ed;
 }
 
 .column > .categories p{
@@ -319,24 +317,32 @@ display: block;
      justify-content: start;
      line-height: 30px;
      cursor: pointer;   
-     position: relative;
+     font-weight: 700;
+     font-size: 14px;
      border-left: 0;
+     border-top: 0 ;
+     border-right: 0;
 }
+
  form > label{
     cursor: pointer;
     padding-left: 2px;
   margin-bottom: 2px;
 }
+
 input[type=radio] {
     border: 0px;
     width: 8%;
     height: 1.1em;
+    accent-color:rgb(255,63,108);
 }
 input[type=checkbox] {
     border: 0px;
     width: 8%;
     height: 1.1em;
+    accent-color: rgb(255,63,108); 
 }
+ 
 .categories{
     color: black;
     font-size: 14px;
@@ -351,13 +357,11 @@ input[type=checkbox] {
      cursor: pointer;
      border-left: 0;
      border-top: 0;
-     /* position: relative; */
+     border-right: 0;
 }
-
-      .categories > form{
-         font-weight: 400;
-       }
-
+.categories > form > span{
+    font-size: 11px;
+}
        .categories > .flex-icon{
         display: flex;
         flex-direction: row;
@@ -368,7 +372,7 @@ input[type=checkbox] {
        }
        .brand{
         color: black;
-        font-size: 15px;
+        font-size: 14px;
         border:1px solid #e9e9ed;
         border-top: 0;
          width: 100%;
@@ -380,8 +384,11 @@ input[type=checkbox] {
          line-height: 26px;
          cursor: pointer;
          border-left: 0;
-         /* position: relative; */
+         border-right: 0;
     }
+    .brand > form > span{
+        font-size: 11px;
+      }  
     /* -------------magnify icon---------------  */
 
 .magnify{
@@ -402,9 +409,6 @@ input[type=checkbox] {
        font-weight: 700;
        padding-left: 1%;
     }
-          .brand > form{
-             font-weight: 400;
-           }
            .brand > .flex-icon{
             display: flex;
             flex-direction: row;
@@ -423,10 +427,11 @@ input[type=checkbox] {
            .color > .flex-icon > .fa-solid{
             margin-right: 2rem;
            }
+
            .prices{
             color: black;
             border: 1;
-            font-size: 15px;
+            font-size: 14px;
             border:1px solid #e9e9ed;
             border-top: 0;
              width: 100%;
@@ -437,13 +442,15 @@ input[type=checkbox] {
              padding-right: 0;
              line-height: 26px;
              cursor: pointer;
+             border-right: 0;
         }
-              .prices > form{
-                 font-weight: 400;
+              .prices > form > span{
+                font-size: 11px;
                }  
+
                .color{
                 color: black;
-                font-size: 15px;
+                font-size: 14px;
                  width: 100%;
                  padding-left: 15px;
                  display: flex;
@@ -453,13 +460,14 @@ input[type=checkbox] {
                  border:1px solid #e9e9ed;
                  border-top: 0;
                  cursor: pointer;
+                 border-right: 0;
          }
-                  .color > form{
-                     font-weight: 400;
-                   }      
+         .color > form > span{
+            font-size: 11px;
+          }     
                .discount-range{
                 color: black;
-                font-size: 15px;
+                font-size: 14px;
                  width: 100%;
                  padding-left: 15px;
                  display: flex;
@@ -470,17 +478,20 @@ input[type=checkbox] {
                  border:1px solid #e9e9ed;
                  border-top: 0;
                  cursor: pointer; 
+                 border-bottom: 0 ;
+                 border-right: 0;
          }
-                  .discount-range > form{
-                     font-weight: 400;
-                   }    
+                  .discount-range > form > span{
+                    font-size: 11px;
+                  }  
           /* --------------------images-----------------------  */
 .beauty-images{
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
-   height: 980vh;
+   /* height: 980vh; */
+   height: 560vh;
    width: 100%;
    margin-right: 5px;
    padding-bottom: 8rem;
@@ -505,7 +516,7 @@ input[type=checkbox] {
     width: 180px;
 }
 .beauty-images > .img:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 30px 0 rgba(204, 197, 197, 0.2), 0 6px 20px 0 rgba(204, 197, 197, 0.19);
 }
 
 .beauty-images > .img > .product{ 
@@ -576,11 +587,9 @@ input[type=checkbox] {
     flex-direction: row;
     justify-content: space-around;
     gap: 12px;
-    
-    
 }
-#button1{
-    color: white; 
+#button1 {
+    color:white; 
     background-color: black;
     height: 28px; 
     width: 22px; 
@@ -620,7 +629,7 @@ button:hover{
     width: 6rem;
 }
    /* -------------footer-------------- */
-   .men_footer{
+   .beauty_footer{
     background-color: #FAFBFC;
     font-family: 'Assistant','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial,sans-serif';
     padding-right: 50px;
@@ -806,6 +815,168 @@ table{
     color: #94969f;
     font-size: 14p1pxx;
 }
+.men-FreeShippingBanner-sidebar {
+    right: 0;
+}
+.men-FreeShippingBanner-sidebar {
+    position: fixed;
+    bottom: 130px;
+    width: 44px;
+    height: 288px;
+    background-color: #535766;
+    z-index: 6;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.men-FreeShippingBanner-sidebar-content {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    width: 36px;
+    padding: 4px;
+    height: 200px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    color: #fcfcfc;
+    display:inline-block;
+}
+
+.men-FreeShippingBanner{
+    width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 18px solid white;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    margin-bottom: 2rem;
+    transform:rotate(45deg);
+}
+.ringing-bell{
+    /* border: 2px solid red; */
+    width: 3rem;
+    position: fixed;
+    bottom: 3.5rem;
+    right: 1.5rem;
+
+}
+
+.box{
+    width: 44px;
+    height: 44px;
+    background-color: rgb(29, 132, 252);
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 2px 6px 12px 10px rgba(0, 0, 0, 0.10);
+  }
+  
+  .ringing-bell .box i{
+    display:block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    
+    -moz-transform-origin: center top;
+    -webkit-animation: ring 4s 1s ease-in-out infinite;
+    -webkit-transform-origin: 50% 4px;
+    -moz-animation: ring 4s 1s ease-in-out infinite;
+    -moz-transform-origin: 50% 4px;
+    animation: ring 4s 1s ease-in-out alternate infinite;
+    transform-origin: 50% 4px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+  
+  @-webkit-keyframes ring {
+    0% { -webkit-transform: rotateZ(0); }
+    1% { -webkit-transform: rotateZ(30deg); }
+    3% { -webkit-transform: rotateZ(-28deg); }
+    5% { -webkit-transform: rotateZ(34deg); }
+    7% { -webkit-transform: rotateZ(-32deg); }
+    9% { -webkit-transform: rotateZ(30deg); }
+    11% { -webkit-transform: rotateZ(-28deg); }
+    13% { -webkit-transform: rotateZ(26deg); }
+    15% { -webkit-transform: rotateZ(-24deg); }
+    17% { -webkit-transform: rotateZ(22deg); }
+    19% { -webkit-transform: rotateZ(-20deg); }
+    21% { -webkit-transform: rotateZ(18deg); }
+    23% { -webkit-transform: rotateZ(-16deg); }
+    25% { -webkit-transform: rotateZ(14deg); }
+    27% { -webkit-transform: rotateZ(-12deg); }
+    29% { -webkit-transform: rotateZ(10deg); }
+    31% { -webkit-transform: rotateZ(-8deg); }
+    33% { -webkit-transform: rotateZ(6deg); }
+    35% { -webkit-transform: rotateZ(-4deg); }
+    37% { -webkit-transform: rotateZ(2deg); }
+    39% { -webkit-transform: rotateZ(-1deg); }
+    41% { -webkit-transform: rotateZ(1deg); }
+  
+    43% { -webkit-transform: rotateZ(0); }
+    100% { -webkit-transform: rotateZ(0); }
+  }
+  
+  @-moz-keyframes ring {
+    0% { -moz-transform: rotate(0); }
+    1% { -moz-transform: rotate(30deg); }
+    3% { -moz-transform: rotate(-28deg); }
+    5% { -moz-transform: rotate(34deg); }
+    7% { -moz-transform: rotate(-32deg); }
+    9% { -moz-transform: rotate(30deg); }
+    11% { -moz-transform: rotate(-28deg); }
+    13% { -moz-transform: rotate(26deg); }
+    15% { -moz-transform: rotate(-24deg); }
+    17% { -moz-transform: rotate(22deg); }
+    19% { -moz-transform: rotate(-20deg); }
+    21% { -moz-transform: rotate(18deg); }
+    23% { -moz-transform: rotate(-16deg); }
+    25% { -moz-transform: rotate(14deg); }
+    27% { -moz-transform: rotate(-12deg); }
+    29% { -moz-transform: rotate(10deg); }
+    31% { -moz-transform: rotate(-8deg); }
+    33% { -moz-transform: rotate(6deg); }
+    35% { -moz-transform: rotate(-4deg); }
+    37% { -moz-transform: rotate(2deg); }
+    39% { -moz-transform: rotate(-1deg); }
+    41% { -moz-transform: rotate(1deg); }
+  
+    43% { -moz-transform: rotate(0); }
+    100% { -moz-transform: rotate(0); }
+  }
+  
+  @keyframes ring {
+    0% { transform: rotate(0); }
+    1% { transform: rotate(30deg); }
+    3% { transform: rotate(-28deg); }
+    5% { transform: rotate(34deg); }
+    7% { transform: rotate(-32deg); }
+    9% { transform: rotate(30deg); }
+    11% { transform: rotate(-28deg); }
+    13% { transform: rotate(26deg); }
+    15% { transform: rotate(-24deg); }
+    17% { transform: rotate(22deg); }
+    19% { transform: rotate(-20deg); }
+    21% { transform: rotate(18deg); }
+    23% { transform: rotate(-16deg); }
+    25% { transform: rotate(14deg); }
+    27% { transform: rotate(-12deg); }
+    29% { transform: rotate(10deg); }
+    31% { transform: rotate(-8deg); }
+    33% { transform: rotate(6deg); }
+    35% { transform: rotate(-4deg); }
+    37% { transform: rotate(2deg); }
+    39% { transform: rotate(-1deg); }
+    41% { transform: rotate(1deg); }
+  
+    43% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+  }
 /* @media only screen and (max-width:800px) {
     For tablets:
     .row {
@@ -823,3 +994,4 @@ table{
     }
   }
     */
+    
