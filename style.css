@@ -243,7 +243,7 @@ display: block;
 }
 .form > form >select{
     width: 250px;
-    height: 36px;
+    height: 40px;
     border: 1px solid #95959a;
     color: #696B79;
     margin-right: 2rem;
@@ -264,6 +264,7 @@ display: block;
     border:1px solid #e9e9ed;
     border-top: 0;
     border-right: 0;
+    height: 590vh;
 }
 
    
