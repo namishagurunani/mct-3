@@ -189,41 +189,40 @@ header nav .home-iconbar .home-wishlist i{
     line-height: 5rem;
     cursor: pointer;
     text-align: center;
+    
    
 }
 .search-bar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* border: 2px solid black; */
     width: 85%;
 }
 .flex-filter  .select{
     display: flex;
-    /* padding-right: 37rem; */
     align-items: center;
     gap: 2rem;
     font-size: 1rem;
 }
 
-.flex-filter > h2{
+.flex-filter  .filter{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-filter  .filter h2{
     font-size: 16px;
     font-weight: 700;
-    padding-left: 1%;
-}
-.flex-filter > .filter{
-    display: flex;
-   align-items: center;
 }
 
 .light{
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
 /* ---------drop down icon--------- */
-.flex-filter > .select > .light > .fa-solid{
+.light > .fa-solid{
     margin-left: 0.2rem;
-    color: #ced2e7;
+    color: #a7a7af;
 }
 /* ----------select form---------- */
 .flex-filter > .form{
@@ -235,12 +234,12 @@ header nav .home-iconbar .home-wishlist i{
     height: 18rem;
 }
 .form > form >select{
-    width: 290px;
-    height: 42px;
+    width: 260px;
+    height: 40px;
     border: 1px solid #95959a;
     color: #696B79;
     margin-right: 2rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px;
 }
 .row{
@@ -252,7 +251,7 @@ header nav .home-iconbar .home-wishlist i{
     align-items: flex-start;
     overflow: hidden;
     border: 1px solid #e9e9ed;
-    position: relative;
+    /* position: relative; */
 }
 
 
@@ -262,45 +261,45 @@ header nav .home-iconbar .home-wishlist i{
     height: auto;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: start;
     padding: 0.1rem;
     height: auto;
+    /* position: sticky; */
 }
 .column > .categories p{
     color:rgb(255,63,141);
-    font-size: large;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
 
 }
 .column > .brand p{
     color:rgb(255,63,141);
-    font-size: large;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
 }
 .column > .prices p{
     color:rgb(255,63,141);
-    font-size: large;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
 }
 .column > .color p{
     color:rgb(255,63,141);
-    font-size: large;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
 }
 .column > .discount-range p{
     color:rgb(255,63,141);
-    font-size: large;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
    
 }
  .gender{
     color: black;
     font-weight: 700;
-    font-size: large;
+    font-size: 15px;
     border: 1px solid #e9e9ed;
     border-top: 0;
-     width: 279px;
+     width: 250px;
      padding: 15px;
      display: flex;
      flex-direction: column;
@@ -315,18 +314,17 @@ header nav .home-iconbar .home-wishlist i{
 }
 input[type=radio] {
     border: 0px;
-    width: 9%;
-    height: 1.4em;
+    width: 8%;
+    height: 1.1em;
 }
 input[type=checkbox] {
     border: 0px;
-    width: 9%;
-    height: 1.4em;
+    width: 8%;
+    height: 1.1em;
 }
 .categories{
     color: black;
-    font-weight: 700;
-    font-size: large;
+    font-size: 14px;
     border: 1px solid #e9e9ed;
     border-top: 0;
      width: 100%;
@@ -335,7 +333,7 @@ input[type=checkbox] {
      flex-direction: column;
      justify-content: start;
      padding-right: 0;
-     line-height: 30px;
+     line-height: 20px;
      cursor: pointer;
      /* font-weight: 100; */
 }
@@ -352,8 +350,7 @@ input[type=checkbox] {
        }
        .brand{
         color: black;
-        font-weight: 700;
-        font-size: large;
+        font-size: 15px;
         border: 1px solid #e9e9ed;
         border-top: 0;
          width: 100%;
@@ -409,8 +406,7 @@ input[type=checkbox] {
            .prices{
             color: black;
             border: 1;
-            font-weight: 700;
-            font-size: large;
+            font-size: 15px;
             border: 1px solid #e9e9ed;
             border-top: 0;
              width: 100%;
@@ -428,8 +424,7 @@ input[type=checkbox] {
                }  
                .color{
                 color: black;
-                font-weight: 700;
-                font-size: large;
+                font-size: 15px;
                  width: 100%;
                  padding: 15px;
                  display: flex;
@@ -446,8 +441,7 @@ input[type=checkbox] {
                    }      
                .discount-range{
                 color: black;
-                font-weight: 700;
-                font-size: large;
+                font-size: 15px;
                  width: 100%;
                  padding: 15px;
                  display: flex;
@@ -480,17 +474,19 @@ input[type=checkbox] {
    cursor: pointer;
    margin-right: 20px;
    row-gap: 1px;
+   text-align: left;
 }
 
 .beauty-images > .img{
     /* height: 480px; */
-    width: 210px;
+    width: 200px;
     padding-left: 0.9rem;
-   margin-bottom: 10px;
+   /* margin-bottom: 10px; */
    margin-top: 20px;
    margin-left: 23px;
    /* border: 2px solid gray; */
 }
+
 .beauty-images > .img  img{
     height: 250px;
     width: 180px;
@@ -503,18 +499,18 @@ input[type=checkbox] {
 .beauty-images > .img > .product{ 
     color: black;
  line-height: 1.5;
- font-size: 1.1rem ;
+ font-size: 0.8rem ;
+ 
  
  }
  .beauty-images > .img > .rating{ 
     color: black;
    line-height: 3.6rem;
- }
-    .beauty-images > .img > .product > h4{
-        line-height: 0;
+
    }
    .beauty-images > .img > .rating{
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 0.8rem;
    }
    .beauty-images > .img > p > .fa-solid{
     color:rgb(20,149,143);
@@ -522,25 +518,25 @@ input[type=checkbox] {
    .beauty-images > .img .discount{
     color: orange;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.7rem;
    }
    .beauty-images > .img > h4 > .price{
    font-weight: 300;
    text-decoration: line-through;
-   font-size: 1rem;
+   font-size: 0.7rem;
    }
    .beauty-images > .img > h3{
-    font-size: 1.3rem;
+    font-size: 1rem;
    }
    .beauty-images > .img > h4{
     line-height: 2rem;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: 700;
    }
    .beauty-images > .img > .left{
     color: red;
-    font-weight: 700;
-    font-size: 20pxz;
+    font-weight: 600;
+    font-size: 0.8rem;
    }
 
       /* -----------buttons------------ */
@@ -548,16 +544,26 @@ input[type=checkbox] {
    .page_up{
     height: 25vh;
     display: flex; 
-    justify-content: space-around; 
+    justify-content: space-evenly; 
     gap: 8rem; 
     align-items: center;
-    padding-bottom: 6rem;
-    padding-left: 23rem;
-    padding-right: 30rem;
+     padding-bottom: 6rem; 
+     padding-left: 13rem;
+    /* padding-right: 30rem;  */
 
 }
+.pages{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+}
 .margin{
-    padding-left: 17rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 12px;
+    
     
 }
 #button1{
