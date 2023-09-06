@@ -189,6 +189,7 @@ header nav .home-iconbar .home-wishlist i{
     justify-content: flex-start;
     /* border-bottom: 1px solid #e9e9ed; */
     padding-left: 1.4rem; 
+    
 }
 div{
 display: block;
@@ -197,6 +198,7 @@ display: block;
  .filter > h2{
     font-size: 16px;
     font-weight: 700;
+    cursor: auto;
 }
       
  .bundles{
@@ -205,7 +207,6 @@ display: block;
     justify-content: space-between;
     align-items: center;
     line-height: 5rem;
-    cursor: pointer;
     text-align: center;
     height: 2px;
     padding-bottom:2rem;
@@ -219,6 +220,7 @@ display: block;
     justify-content: space-between;
     font-size: 1rem;
     margin-right: 25rem;
+    cursor: pointer;
 
 }
 
@@ -246,6 +248,7 @@ display: block;
     margin-right: 2rem;
     font-size: 0.8rem;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* ------------sidebar-------------- */
@@ -261,10 +264,8 @@ display: block;
     border:1px solid #e9e9ed;
     border-top: 0;
     border-right: 0;
-    height: 590vh;
+    height: 715vh;
 }
-
-   
 
 .column{
     height: auto;
@@ -490,7 +491,6 @@ input[type=checkbox] {
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
-   /* height: 980vh; */
    height: 560vh;
    width: 100%;
    margin-right: 5px;
@@ -500,15 +500,22 @@ input[type=checkbox] {
    border-right: 0;
    border-left: 0 ;
    border-bottom: 0;
-
+   
 }
 .beauty-images > .img{
-    width: 205px;
-    height: 390px;
+    width: 220px;
+    height: 428px;
     padding-left: 0.9rem;
    margin-top: 20px;
    margin-left: 23px;
-   text-align: left;
+   text-align: left;
+   cursor: pointer;
+
+}
+.after{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .beauty-images > .img  img{
@@ -518,24 +525,44 @@ input[type=checkbox] {
 .beauty-images > .img:hover{
     box-shadow: 0 4px 30px 0 rgba(204, 197, 197, 0.2), 0 6px 20px 0 rgba(204, 197, 197, 0.19);
 }
+.hover{
+    transition: opacity;
+    display: block;
+}
+.after{
+    visibility: hidden;
+}
 
-.beauty-images > .img > .product{ 
+.main-container:hover .rating{
+    opacity: 0;
+    display: none;
+}
+.main-container:hover .hover{
+    opacity: 0;
+    display: none;
+}
+
+.main-container:hover .after{
+    visibility: visible;
+    transition: 3s ease-in-out;
+}
+
+.hover .product{ 
     color: black;
- line-height: 1.5;
- font-size: 0.8rem ;
- 
+  line-height: 1.5;
+  font-size: 0.8rem ;
  
  }
- .beauty-images > .img > .rating{ 
+ .main-container .rating{ 
     color: black;
    line-height: 3.6rem;
 
    }
-   .beauty-images > .img > .rating{
+   .main-container .rating{
     font-weight: bold;
     font-size: 0.8rem;
    }
-   .beauty-images > .img > p > .fa-solid{
+   .main-container .fa-solid{
     color:rgb(20,149,143);
    }
    .beauty-images > .img .discount{
@@ -543,24 +570,62 @@ input[type=checkbox] {
     font-weight: 400;
     font-size: 0.8rem;
    }
-   .beauty-images > .img > h4 > .price{
+   .hover > h4 > .price{
    font-weight: 300;
    text-decoration: line-through;
    font-size: 0.8rem;
    }
-   .beauty-images > .img > h3{
+   .hover > h3{
     font-size: 1rem;
    }
-   .beauty-images > .img > h4{
-    line-height: 1.1rem;
+   .hover > h4{
+    line-height: 1.5rem;
     font-size: 0.9rem;
     font-weight: 700;
    }
-   .beauty-images > .img > .left{
+   .left{
     color: red;
     font-weight: 600;
     font-size: 0.8rem;
    }
+.after{
+     margin-top: 16px;
+}
+   .after > .left{
+   color: red;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 5px;
+   }
+  .after > h4 {
+    line-height: 15px;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .after > h4 > .price{
+    font-weight: 300;
+   text-decoration: line-through;
+   font-size: 0.8rem;
+  }
+  .after > h4 > .price .discount{
+    color: orange;
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+  .after > .arc{
+    height: 32px;
+     width: 92%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: .5px solid rgb(132, 129, 129); margin-right:5px;
+     margin-bottom: 10px;
+     margin-top: 5px;
+  }
+   .pre > p{
+     font-size: 1rem;
+     margin-bottom: 15px;
+  }
 
       /* -----------buttons------------ */
 
@@ -866,6 +931,7 @@ table{
 
 }
 
+
 .box{
     width: 44px;
     height: 44px;
@@ -881,7 +947,7 @@ table{
     height: 40px;
     font-size: 20px;
     color: white;
-    
+    z-index: 1000;
     -moz-transform-origin: center top;
     -webkit-animation: ring 4s 1s ease-in-out infinite;
     -webkit-transform-origin: 50% 4px;
@@ -977,21 +1043,5 @@ table{
     43% { transform: rotate(0); }
     100% { transform: rotate(0); }
   }
-/* @media only screen and (max-width:800px) {
-    For tablets:
-    .row {
-      width: 80%;
-      padding: 0;
-    }
-    .column {
-      width: 100%;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    For mobile phones:
-    .flex-filter, .row, .column .beauty-images{
-      width: 100%;
-    }
-  }
-    */
+
     
