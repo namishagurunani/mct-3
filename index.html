@@ -16,44 +16,65 @@
 
 </head>
 <body>
-  <div class="main-container">
-    <header>
-        <nav>
-        <img src="https://www.freepnglogos.com/uploads/logo-myntra-png/myntra-logo-m-png-3.png" alt="Myntra logo" class="home-image">
+  <header>
+    <nav class="navbar">
+      <!-- left_nav -->
+      <div class="left_nav">
+        <i class="fa-solid fa-bars"></i>
+        <a href="" class="a"></a>
+            <img
+          src="https://www.freepnglogos.com/uploads/logo-myntra-png/myntra-logo-m-png-3.png"
+          alt="Myntra logo"
+        />
         
-            <!-- --list-view-- -->
-            <ul>
-                <li class="home-cata1"><a href="">MEN</a></li>
-                <li class="home-cata2"><a href="">WOMEN</a></li>
-                <li class="home-cata3"><a href="">KIDS</a></li>
-                <li class="home-cata4"><a href="">HOME & LIVING</a></li>
-                <li class="home-cata5"><a href="">BEAUTY</a></li>
-                <li class="home-cata6"><a href="">STUDIO</a></li>
-            </ul>
-            <!-- --searchbar-- -->
-            <div class="home-searchbar">
-                <input type="text" placeholder="Search for products, brands and more">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <!-- --icons-- -->
-            <div class="home-iconbar">
-                <div class="home-profile">
-                    <i class="fa-regular fa-user"></i>
-                    <p>Profile</p>
-                </div>
-                <div class="home-wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                    <p>Wishlist</p>
-                </div>
-                <div class="home-bag">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <p>Bag</p>
-                </div>
-            </div>
-        </nav>
-    </header>
-</div>
 
+        <!-- --list-view-- -->
+        <ul>
+          <li class="home-cata1"><a href="./men.html">MEN</a></li>
+          <li class="home-cata2"><a href="./women.html">WOMEN</a></li>
+          <li class="home-cata3"><a href="./kids.html">KIDS</a></li>
+          <li class="home-cata4">
+            <a href="./home&living.html">HOME & LIVING</a>
+          </li>
+          <li class="home-cata5"><a href="./beauty.html">BEAUTY</a></li>
+          <li class="home-cata6"><a href="./studio.html">STUDIO </a></li>
+          <span>NEW</span>
+        </ul>
+      </div>
+
+      <!-- right_nav -->
+
+      <div class="right_nav">
+        <!-- --searchbar-- -->
+        <div class="home-searchbar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search for products, brands and more"
+          />
+        </div>
+        <!-- --icons-- -->
+
+
+        <div class="home-iconbar">
+          <div class="home-profile">
+            <i class="fa-regular fa-user"></i>
+            <p>Profile</p>
+          </div>
+
+          <div class="home-profile">
+            <i class="fa-regular fa-heart"></i>
+            <p>Wishlist</p>
+          </div>
+
+          <div class="home-profile">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Bag</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
       <!----- beauty section begins from here ------>
     <section class="beauty">
       <!----- description ----->
@@ -71,11 +92,13 @@
             <h4 class="light">Bundles <i class="fa-solid fa-chevron-down"></i></h4>
             <h4 class="light">Country of Origin <i class="fa-solid fa-chevron-down"></i></h4>
             <h4 class="light">Size <i class="fa-solid fa-chevron-down"></i></h4></div>
-        
+          
             <div class="form">
             <form action="/action_page.php">
               <label for="what's new"></label>
-              <select name="what's new" id="what's new">
+              <select name="what's new" id="what's new"  
+              onblur="this.size=0;"
+              onchange="this.size=1; this.blur()">
                 <option value="Sort by : Recommended">Sort by : Recommended</span></option>
                 <option value="What's New">What's New</option>
                 <option value="opel">Popularity</option>
@@ -228,19 +251,23 @@
                     <div class="beauty-images">
                       <!-- img_1 -->
         <div class="img" id="img1">
+         
           <!-- owl Carousel starts -->
           <div class="owl-carousel owl-theme">
             <div class="item">
+              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
               <a href="https://www.myntra.com/hair-colour/loreal/loreal-paris-excellence-creme-triple-care-hair-color-72-ml100g---dark-brown-03/12442324/buy">
                 <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12442324/2022/2/21/ae87c9eb-356a-41c3-aee4-5a703add8cb91645432477345LOrealParisExcellenceCremeTripleCareHairColor72ml100g-DarkBr1.jpg" alt="loreal_color"></a>
             </div>
 
             <div class="item">
+              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
               <a href="https://www.myntra.com/hair-colour/loreal/loreal-paris-excellence-creme-triple-care-hair-color-72-ml100g---dark-brown-03/12442324/buy">
                 <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/banner2021/6/15/0efffed1-bb68-4774-9daa-94ff6ad28e121623746468185-1.jpg" alt="loreal_color"></a>
             </div>
 
             <div class="item">
+              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
               <a href="https://www.myntra.com/hair-colour/loreal/loreal-paris-excellence-creme-triple-care-hair-color-72-ml100g---dark-brown-03/12442324/buy">
                 <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12442324/2022/2/21/ea9e537e-6356-478e-916b-ba54258ad08b1645432477361LOrealParisExcellenceCremeTripleCareHairColor72ml100g-DarkBr4.jpg" alt="loreal_color"></a>
             </div>
@@ -337,7 +364,7 @@
                 <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
                 </div>
                 <div class="pre">
-                  <p>Sizes:150gm</p>
+                  <p>Sizes: Pack</p>
                 </div>
                 <h4>Rs. 710 <span class="price"> Rs. 888</span> <span class="discount">(20% OFF)</span></h4>
               </div>
@@ -396,33 +423,33 @@
         <!-- owl Carousel starts -->
           <div class="owl-carousel owl-theme">
             <div class="item">
-              <a href=""><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2508145/2023/5/31/1e1b780b-66b6-42a3-a08e-7a3256c6f4641685528431373-Indulekha-Bringha-Hair-Oil-100-ml-5081685528430928-1.jpg"
+              <a href="https://www.myntra.com/hair-oil/indulekha/indulekha-bringha-hair-oil-250-ml/11879246/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2508145/2023/5/31/1e1b780b-66b6-42a3-a08e-7a3256c6f4641685528431373-Indulekha-Bringha-Hair-Oil-100-ml-5081685528430928-1.jpg"
                 alt="Indulekha"></a>
             </div>
             <div class="item">
-              <a href=""><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23294394/2023/7/17/ec2134a9-e10a-482a-bcdc-95bb374394281689577984662FACESCANADASetofMagneteyesKajal-Black01WeightlessMatteLipsti4.jpg"
+              <a href="https://www.myntra.com/hair-oil/indulekha/indulekha-bringha-hair-oil-250-ml/11879246/buy"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23294394/2023/7/17/ec2134a9-e10a-482a-bcdc-95bb374394281689577984662FACESCANADASetofMagneteyesKajal-Black01WeightlessMatteLipsti4.jpg"
                 alt="Indulekha"></a>
             </div>
             <div class="item">
-              <a href=""><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23294394/2023/7/17/709b31b9-8bd4-4aea-a01e-7a4d5900e29b1689577984730FACESCANADASetofMagneteyesKajal-Black01WeightlessMatteLipsti7.jpg"
+              <a href="https://www.myntra.com/hair-oil/indulekha/indulekha-bringha-hair-oil-250-ml/11879246/buy"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23294394/2023/7/17/709b31b9-8bd4-4aea-a01e-7a4d5900e29b1689577984730FACESCANADASetofMagneteyesKajal-Black01WeightlessMatteLipsti7.jpg"
                 alt="Indulekha"></a>
             </div>
           </div>
           <!-- owl Carousel ends -->
           <div class="main-container">
-            <p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
+            <p class="rating">4.4 <i class="fa-solid fa-star"></i> | 11.1k</p>
             <div class="hover">
-              <h3>LOreal</h3>
-              <p class="product">Hair Color - Dark Brown 03</p>
-              <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+              <h3>indulekha</h3>
+              <p class="product">Bringha Hair Oil 250 ml</p>
+              <h4>Rs. 599 <span class="price"> Rs. 999</span> <span class="discount"> (40% OFF)</span></h4>
             </div>
               <div class="after">
                 <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
                 </div>
                 <div class="pre">
-                  <p>Sizes:150gm</p>
+                  <p>Sizes: 250ML</p>
                 </div>
-                <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+                <h4>Rs. 599 <span class="price"> Rs. 999</span> <span class="discount"> (40% OFF)</span></h4>
   
               </div>
             </div>
@@ -450,19 +477,19 @@
           
           <!-- owl Carousel ends -->
           <div class="main-container">
-            <p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
+            <p class="rating">4.7 <i class="fa-solid fa-star"></i> | 70</p>
             <div class="hover">
-              <h3>LOreal</h3>
-              <p class="product">Hair Color - Dark Brown 03</p>
-              <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+              <h3>dyson</h3>
+              <p class="product">Gift Edition Airwrap</p>
+              <h4>Rs. 45900 <span class="price"> Rs. 47900</span> <span class="discount"> (Rs. 2000 OFF)</span></h4>
             </div>
               <div class="after">
                 <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
                 </div>
                 <div class="pre">
-                  <p>Sizes:150gm</p>
+                  <p>Sizes: Onesize</p>
                 </div>
-                <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+                <h4>Rs. 45900 <span class="price"> Rs. 47900</span> <span class="discount">(Rs. 2000 OFF)</span></h4>
               </div>
             </div>
           </div>
@@ -484,19 +511,19 @@
           
           <!-- owl Carousel ends -->
           <div class="main-container">
-            <p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
+            <p class="rating">4.3 <i class="fa-solid fa-star"></i> | 23.6k</p>
             <div class="hover">
-              <h3>LOreal</h3>
-              <p class="product">Hair Color - Dark Brown 03</p>
-              <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+              <h3>Philips</h3>
+              <p class="product">HP8302/06 Selfie Straightener</p>
+              <h4>Rs. 1166 <span class="price"> Rs. 1495</span> <span class="discount"> (22% OFF)</span></h4>
             </div>
               <div class="after">
                 <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
                 </div>
                 <div class="pre">
-                  <p>Sizes:150gm</p>
+                  <p>Sizes: Onesize</p>
                 </div>
-                <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+                <h4>Rs. 1166 <span class="price"> Rs. 1495</span> <span class="discount"> (22% OFF)</span></h4>
               </div>
             </div>
           </div>
@@ -517,57 +544,57 @@
           </div>
   <!-- owl Carousel ends -->
   <div class="main-container">
-    <p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
+    <p class="rating">4.2 <i class="fa-solid fa-star"></i> | 860</p>
     <div class="hover">
-      <h3>LOreal</h3>
-      <p class="product">Hair Color - Dark Brown 03</p>
-      <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+      <h3>Philips</h3>
+      <p class="product">SkinProtect Beard Trimmer</p>
+      <h4>Rs. 815 <span class="price"> Rs. 995</span> <span class="discount"> (18% OFF)</span></h4>
     </div>
       <div class="after">
         <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
         </div>
         <div class="pre">
-          <p>Sizes:150gm</p>
+          <p>Sizes: Onesize</p>
         </div>
-        <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+        <h4>Rs. 815 <span class="price"> Rs. 995</span> <span class="discount"> (18% OFF)</span></h4>
       </div>
     </div>
   </div>
         <!-- img_9 -->
         <div class="img" id="img9">
-<!-- owl Carousel starts -->
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <a href="https://www.myntra.com/trimmer/philips/philips-bt123218-skinprotect-beard-trimmer---blue/22358346/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/22358346/2023/5/22/675a9cce-7a8d-467a-9789-bf6717d977041684733283364-Philips-BT123218-SkinProtect-Beard-Trimmer---Blue-8421684733-1.jpg" alt="philips_beard-trimmer"></a>
-            </div>
-            <div class="item">
-              <a href="https://www.myntra.com/trimmer/philips/philips-bt123218-skinprotect-beard-trimmer---blue/22358346/buy"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22358346/2023/5/22/fe44c440-4054-42af-b4b7-610b3a0294431684733283354-Philips-BT123218-SkinProtect-Beard-Trimmer---Blue-8421684733-2.jpg" alt="philips_beard-trimmer"></a>
-            </div>
-             
-            <div class="item">
-              <a href="https://www.myntra.com/trimmer/philips/philips-bt123218-skinprotect-beard-trimmer---blue/22358346/buy"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22358346/2023/5/22/5a8678f2-2f42-4314-af23-7a764bf8087b1684733283320-Philips-BT123218-SkinProtect-Beard-Trimmer---Blue-8421684733-5.jpg" alt="philips_beard-trimmer"></a>
-            </div>
-                  
-          </div>
-           <!-- owl Carousel ends -->
-           <div class="main-container">
-            <p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
-            <div class="hover">
-              <h3>LOreal</h3>
-              <p class="product">Hair Color - Dark Brown 03</p>
-              <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
-            </div>
-              <div class="after">
-                <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
-                </div>
-                <div class="pre">
-                  <p>Sizes:150gm</p>
-                </div>
-                <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
-  
-              </div>
-            </div>
-          </div>
+ <!-- owl Carousel starts -->
+ <div class="owl-carousel owl-theme">
+  <div class="item"><a href="https://www.myntra.com/day-cream/ponds/ponds-age-miracle-whip-cream-with-retinol-c--hydrolyzed-milk-protein---35g/17389758/buy"><img src=" https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17389758/2022/3/9/677ca21d-7aee-4b0c-bac0-8ff047839ef01646808206624EyeshadowJeffreeStarCosmeticsUnisexEyeshadowJeffreeStarCosme1.jpg" alt="ponds_whip-cream"></a> </div>
+
+  <div class="item">
+    <a href="https://www.myntra.com/hair-colour/loreal/loreal-paris-excellence-creme-triple-care-hair-color-72-ml100g---dark-brown-03/12442324/buy">
+      <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17389758/2022/3/9/31117099-23a1-49c0-b46e-4d2374c840551646808206652EyeshadowJeffreeStarCosmeticsUnisexEyeshadowJeffreeStarCosme2.jpg"></a>
+  </div>
+
+  <div class="item">
+    <a href="https://www.myntra.com/hair-colour/loreal/loreal-paris-excellence-creme-triple-care-hair-color-72-ml100g---dark-brown-03/12442324/buy">
+      <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/17389758/2022/3/9/ecf3e437-ec62-4855-80b3-0c9c3c3e2d6b1646808206644EyeshadowJeffreeStarCosmeticsUnisexEyeshadowJeffreeStarCosme11.jpg" alt="ponds_whip-cream"></a>
+  </div>
+</div>
+  <!-- owl Carousel ends -->
+<div class="main-container">
+<p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
+<div class="hover">
+<h3>LOreal</h3>
+<p class="product">Hair Color - Dark Brown 03</p>
+<h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+</div>
+<div class="after">
+<div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
+</div>
+<div class="pre">
+<p>Sizes:150gm</p>
+</div>
+<h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+
+</div>
+</div>
+</div>
         <!-- img_10 -->
         <div class="img" id="img10">
             <!-- owl Carousel starts -->
@@ -611,16 +638,19 @@
                           <!-- owl Carousel starts -->
                           <div class="owl-carousel owl-theme">
                             <div class="item">
+                              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
                               <a href="https://www.myntra.com/shampoo/dove/dove-unisex-daily-shine-shampoo-for-dull-hair-1l/11852414/buy">
                                 <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11852414/2023/6/1/cc8e21cb-78df-496b-8b5f-c3e0709f65d91685619001276DoveUnisexDailyShineShampooForDullHair1L1.jpg" alt="dove_shampoo"></a>
                             </div>
                 
                             <div class="item">
+                              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
                               <a href="https://www.myntra.com/shampoo/dove/dove-unisex-daily-shine-shampoo-for-dull-hair-1l/11852414/buy">
                                 <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11852414/2023/6/1/da0bc6b2-cd3b-4126-a4ec-9b4f2a6d87e91685619001311DoveUnisexDailyShineShampooForDullHair1L2.jpg" alt="dove_shampoo"></a>
                             </div>
                 
                             <div class="item">
+                              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
                               <a href="https://www.myntra.com/shampoo/dove/dove-unisex-daily-shine-shampoo-for-dull-hair-1l/11852414/buy">
                                 <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11852414/2023/6/1/0449a87e-2272-46f9-9f1e-4761fb7073ce1685619001336DoveUnisexDailyShineShampooForDullHair1L4.jpg" alt="dove_shampoo"></a>
                             </div>
@@ -784,7 +814,8 @@
                         <div class="img" id="img16">
                           <!-- owl Carousel starts -->
                           <div class="owl-carousel owl-theme">
-                            <div class="item"><a href="https://www.myntra.com/shampoo/loreal+professionnel/loreal-professionnel-absolut-repair-shampoo-with-gold-quinoa-for-damaged-hair-300ml/9925133/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9925133/2023/6/26/d352c735-532a-448b-987a-cc9a7b1c77ef1687761784315-LOreal-Professionnel-Absolut-Repair-Shampoo-with-Gold-Quinoa-1.jpg" alt="lorealProfessionnel_Repair-shampoo"></a> </div>
+                            <div class="item">
+                            <a href="https://www.myntra.com/shampoo/loreal+professionnel/loreal-professionnel-absolut-repair-shampoo-with-gold-quinoa-for-damaged-hair-300ml/9925133/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9925133/2023/6/26/d352c735-532a-448b-987a-cc9a7b1c77ef1687761784315-LOreal-Professionnel-Absolut-Repair-Shampoo-with-Gold-Quinoa-1.jpg" alt="lorealProfessionnel_Repair-shampoo"></a> </div>
                 
                             <div class="item">
                               <a href="https://www.myntra.com/shampoo/loreal+professionnel/loreal-professionnel-absolut-repair-shampoo-with-gold-quinoa-for-damaged-hair-300ml/9925133/buy">
@@ -854,16 +885,19 @@
                         <div class="img" id="img18"
                         ><!-- owl Carousel starts -->
                           <div class="owl-carousel owl-theme">
-                            <div class="item"><a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9925139/2023/6/26/41bbc2b7-cb76-4318-b197-9ca8aa47ab391687761801364-LOreal-Professionnel-Absolut-Repair-Hair-Mask-with-Gold-Quin-1.jpg" alt="loreal_hair-mask"></a> </div>
+                            <div class="item">
+                              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div><a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9925139/2023/6/26/41bbc2b7-cb76-4318-b197-9ca8aa47ab391687761801364-LOreal-Professionnel-Absolut-Repair-Hair-Mask-with-Gold-Quin-1.jpg" alt="loreal_hair-mask"></a> </div>
                 
                             <div class="item">
+                              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
                               <a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy">
-                                <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/banner2021/6/15/0efffed1-bb68-4774-9daa-94ff6ad28e121623746468185-1.jpg" alt="loreal_color"></a>
+                                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9925139/2023/6/26/92a97a4a-0eaa-411c-80ae-30c1e2b962091687761801352-LOreal-Professionnel-Absolut-Repair-Hair-Mask-with-Gold-Quin-2.jpg"></a>
                             </div>
                 
                             <div class="item">
+                              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
                               <a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy">
-                                <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12442324/2022/2/21/ea9e537e-6356-478e-916b-ba54258ad08b1645432477361LOrealParisExcellenceCremeTripleCareHairColor72ml100g-DarkBr4.jpg" alt="loreal_color"></a>
+                                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9925139/2023/6/26/91c439e7-6b00-42b6-b0f5-e22961a5e0131687761801303-LOreal-Professionnel-Absolut-Repair-Hair-Mask-with-Gold-Quin-6.jpg"></a>
                             </div>
                           </div>
                             <!-- owl Carousel ends -->
@@ -878,7 +912,7 @@
                 <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
                 </div>
                 <div class="pre">
-                  <p>Sizes:150gm</p>
+                  <p>Sizes: 200-250 ML</p>
                 </div>
                 <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
               </div>
@@ -1083,40 +1117,40 @@
 
         <!-- img_24 -->
         <div class="img" id="img24">
-<!-- owl Carousel starts -->
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <a href=""><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2508145/2023/5/31/1e1b780b-66b6-42a3-a08e-7a3256c6f4641685528431373-Indulekha-Bringha-Hair-Oil-100-ml-5081685528430928-1.jpg"
-                alt="Indulekha"></a>
-            </div>
-            <div class="item">
-              <a href=""><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23294394/2023/7/17/ec2134a9-e10a-482a-bcdc-95bb374394281689577984662FACESCANADASetofMagneteyesKajal-Black01WeightlessMatteLipsti4.jpg"
-                alt="Indulekha"></a>
-            </div>
-            <div class="item">
-              <a href=""><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23294394/2023/7/17/709b31b9-8bd4-4aea-a01e-7a4d5900e29b1689577984730FACESCANADASetofMagneteyesKajal-Black01WeightlessMatteLipsti7.jpg"
-                alt="Indulekha"></a>
-            </div>
-          </div>
-           <!-- owl Carousel ends -->
-           <div class="main-container">
-            <p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
-            <div class="hover">
-              <h3>LOreal</h3>
-              <p class="product">Hair Color - Dark Brown 03</p>
-              <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
-            </div>
-              <div class="after">
-                <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>
-                </div>
-                <div class="pre">
-                  <p>Sizes:150gm</p>
-                </div>
-                <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
-              </div>
-            </div>
-          </div>
+  <!-- owl Carousel starts -->
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <a href="https://www.myntra.com/hair-oil/indulekha/indulekha-bringha-hair-oil-250-ml/11879246/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2508145/2023/5/31/1e1b780b-66b6-42a3-a08e-7a3256c6f4641685528431373-Indulekha-Bringha-Hair-Oil-100-ml-5081685528430928-1.jpg"
+        alt="Indulekha"></a>
+    </div>
+    <div class="item">
+      <a href="https://www.myntra.com/hair-oil/indulekha/indulekha-bringha-hair-oil-250-ml/11879246/buy"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23294394/2023/7/17/ec2134a9-e10a-482a-bcdc-95bb374394281689577984662FACESCANADASetofMagneteyesKajal-Black01WeightlessMatteLipsti4.jpg"
+        alt="Indulekha"></a>
+    </div>
+    <div class="item">
+      <a href="https://www.myntra.com/hair-oil/indulekha/indulekha-bringha-hair-oil-250-ml/11879246/buy"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/23294394/2023/7/17/709b31b9-8bd4-4aea-a01e-7a4d5900e29b1689577984730FACESCANADASetofMagneteyesKajal-Black01WeightlessMatteLipsti7.jpg"
+        alt="Indulekha"></a>
+    </div>
+  </div>
+  <!-- owl Carousel ends -->
+  <div class="main-container">
+    <p class="rating">4.4 <i class="fa-solid fa-star"></i> | 11.1k</p>
+    <div class="hover">
+      <h3>indulekha</h3>
+      <p class="product">Bringha Hair Oil 250 ml</p>
+      <h4>Rs. 599 <span class="price"> Rs. 999</span> <span class="discount"> (40% OFF)</span></h4>
+    </div>
+      <div class="after">
+        <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
+        </div>
+        <div class="pre">
+          <p>Sizes: 250ML</p>
+        </div>
+        <h4>Rs. 599 <span class="price"> Rs. 999</span> <span class="discount"> (40% OFF)</span></h4>
 
+      </div>
+    </div>
+  </div>
         <!-- img_25 -->
         <div class="img" id="img25">
 <!-- owl Carousel starts -->
@@ -1230,13 +1264,16 @@
           <!-- owl Carousel starts -->
           <div class="owl-carousel owl-theme">
             <div class="item">
+              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
               <a href="https://www.myntra.com/trimmer/philips/philips-bt123218-skinprotect-beard-trimmer---blue/22358346/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/22358346/2023/5/22/675a9cce-7a8d-467a-9789-bf6717d977041684733283364-Philips-BT123218-SkinProtect-Beard-Trimmer---Blue-8421684733-1.jpg" alt="philips_beard-trimmer"></a>
             </div>
             <div class="item">
+              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
               <a href="https://www.myntra.com/trimmer/philips/philips-bt123218-skinprotect-beard-trimmer---blue/22358346/buy"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22358346/2023/5/22/fe44c440-4054-42af-b4b7-610b3a0294431684733283354-Philips-BT123218-SkinProtect-Beard-Trimmer---Blue-8421684733-2.jpg" alt="philips_beard-trimmer"></a>
             </div>
              
             <div class="item">
+              <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
               <a href="https://www.myntra.com/trimmer/philips/philips-bt123218-skinprotect-beard-trimmer---blue/22358346/buy"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/22358346/2023/5/22/5a8678f2-2f42-4314-af23-7a764bf8087b1684733283320-Philips-BT123218-SkinProtect-Beard-Trimmer---Blue-8421684733-5.jpg" alt="philips_beard-trimmer"></a>
             </div>  
           </div>
@@ -1551,53 +1588,57 @@
   <!-- img_37 -->
 <div class="img" id="img37"
 ><!-- owl Carousel starts -->
-  <div class="owl-carousel owl-theme">
-    <div class="item"><a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9925139/2023/6/26/41bbc2b7-cb76-4318-b197-9ca8aa47ab391687761801364-LOreal-Professionnel-Absolut-Repair-Hair-Mask-with-Gold-Quin-1.jpg" alt="loreal_hair-mask"></a> </div>
+<div class="owl-carousel owl-theme">
+  <div class="item">
+  <a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy"><img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9925139/2023/6/26/41bbc2b7-cb76-4318-b197-9ca8aa47ab391687761801364-LOreal-Professionnel-Absolut-Repair-Hair-Mask-with-Gold-Quin-1.jpg" alt="loreal_hair-mask"></a> </div>
 
-    <div class="item">
-      <a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy">
-        <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/banner2021/6/15/0efffed1-bb68-4774-9daa-94ff6ad28e121623746468185-1.jpg" alt="loreal_color"></a>
-    </div>
-
-    <div class="item">
-      <a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy">
-        <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12442324/2022/2/21/ea9e537e-6356-478e-916b-ba54258ad08b1645432477361LOrealParisExcellenceCremeTripleCareHairColor72ml100g-DarkBr4.jpg" alt="loreal_color"></a>
-    </div>
+  <div class="item">
+    <a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy">
+      <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9925139/2023/6/26/92a97a4a-0eaa-411c-80ae-30c1e2b962091687761801352-LOreal-Professionnel-Absolut-Repair-Hair-Mask-with-Gold-Quin-2.jpg"></a>
   </div>
-   <!-- owl Carousel ends -->
-    <div class="main-container">
-      <p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
-      <div class="hover">
-        <h3>LOreal</h3>
-        <p class="product">Hair Color - Dark Brown 03</p>
-        <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
-      </div>
-        <div class="after">
-          <div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
-          </div>
-          <div class="pre">
-            <p>Sizes:150gm</p>
-          </div>
-          <h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
-        </div>
-      </div>
-    </div>
+
+  <div class="item">
+    <a href="https://www.myntra.com/hair-masks/loreal+professionnel/loreal-professionnel-absolut-repair-hair-mask-with-gold-quinoa-for-damaged-hair-250g/9925139/buy">
+      <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9925139/2023/6/26/91c439e7-6b00-42b6-b0f5-e22961a5e0131687761801303-LOreal-Professionnel-Absolut-Repair-Hair-Mask-with-Gold-Quin-6.jpg"></a>
+  </div>
+</div>
+  <!-- owl Carousel ends -->
+<div class="main-container">
+<p class="rating">4.5 <i class="fa-solid fa-star"></i> | 2.5k</p>
+<div class="hover">
+<h3>LOreal</h3>
+<p class="product">Hair Color - Dark Brown 03</p>
+<h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+</div>
+<div class="after">
+<div class="arc"><i class="fa-regular fa-heart" style="color: gray; margin-right: 5px;"></i>Wishlist
+</div>
+<div class="pre">
+<p>Sizes: 200-250 ML</p>
+</div>
+<h4>Rs. 661 <span class="price"> Rs. 679</span> <span class="discount"> (10% OFF)</span></h4>
+</div>
+</div>
+</div>
 
  <!-- img_38 -->
  <div class="img" id="img38">
   <!-- owl Carousel starts -->
   <div class="owl-carousel owl-theme">
     <div class="item">
+      <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
       <a href="https://www.myntra.com/hair-colour/loreal/loreal-paris-excellence-creme-triple-care-hair-color-72-ml100g---dark-brown-03/12442324/buy">
         <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12442324/2022/2/21/ae87c9eb-356a-41c3-aee4-5a703add8cb91645432477345LOrealParisExcellenceCremeTripleCareHairColor72ml100g-DarkBr1.jpg" alt="loreal_color"></a>
     </div>
 
     <div class="item">
+      <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
       <a href="https://www.myntra.com/hair-colour/loreal/loreal-paris-excellence-creme-triple-care-hair-color-72-ml100g---dark-brown-03/12442324/buy">
         <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/banner2021/6/15/0efffed1-bb68-4774-9daa-94ff6ad28e121623746468185-1.jpg" alt="loreal_color"></a>
     </div>
 
     <div class="item">
+      <div class="xcelerator-plpXceleratorImageTag">TRENDING</div>
       <a href="https://www.myntra.com/hair-colour/loreal/loreal-paris-excellence-creme-triple-care-hair-color-72-ml100g---dark-brown-03/12442324/buy">
         <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12442324/2022/2/21/ea9e537e-6356-478e-916b-ba54258ad08b1645432477361LOrealParisExcellenceCremeTripleCareHairColor72ml100g-DarkBr4.jpg" alt="loreal_color"></a>
     </div>
@@ -1700,8 +1741,6 @@
       </div>
     </div>
   </div>
-
-
   </div>
      </div>
                 </div>
@@ -1730,22 +1769,13 @@
                 <!--------- fixed flat offer -------->
                 <div class=" men-FreeShippingBanner-sidebar ">
                   <div class=" men-FreeShippingBanner"></div>
-              
                   <p class="men-FreeShippingBanner-sidebar-content">FLAT ₹400 OFF</p>
               </div>
-               <!-------- fixed ringing-bell -------->
-
-              <div class= ringing-bell>
-               <div class = "box"> 
-               <i class="fa-regular fa-bell"></i>
-              </div>
-               </div>
                 <!-- footer -->
                 <footer class="beauty_footer">
                   <!-- First section of footer starts -->
           
                   <div class="personal_care">
-          
                       <div class="peronal_care_info">
                           <h4 class="large_size">BUY PERSONAL CARE</h4>
                           <h1 class="gyan_section_h1 g_color"><strong>PERSONAL CARE PRODUCTS AT MYNTRA: FOR EVERY NEED FROM HEAD TO TOE</strong></h1>
@@ -1970,26 +2000,17 @@
                   
                   <!-- Second section of footer ends -->
               </footer>
-              
-
-
-
-
-
-
-
 
              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" ></script>
     <script>
-
         $('.owl-carousel').owlCarousel({
             loop:true,
             margin:10,
             nav:false,
             dots:true,
-            // autoplay:true,
-            // autoplayTimeout:3000,
+            autoplay:true,
+            autoplayTimeout:3000,
             responsive:{
                 0:{
                     items:1
